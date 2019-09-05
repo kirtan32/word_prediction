@@ -1,0 +1,51 @@
+@import "https://use.fontawesome.com/releases/v5.5.0/css/all.css";
+{
+    margin: 0;
+    padding: 0;
+}
+.body{
+    background-color: #f1f3f4;
+    font-family: sans-serif;
+}
+.header {
+    background-color: rgb(163, 176, 235);
+    text-align: center;
+    padding: 20px;
+    font-size: 18px;
+    border-radius: 4px;
+}
+
+.input-group-text{
+    background: rgb(200, 206, 224);
+    border: 1px solid rgb(0, 38, 255);
+    border-top-left-radius: 20px !important;
+    border-bottom-left-radius: 20px !important;
+    border-top-right-radius: 20px !important;
+    border-bottom-right-radius: 20px !important;
+    cursor: pointer; 
+    width: 25%;
+}
+.tr1{
+    background-color: #635d5d;
+}
+.tr2{
+    background-color: #aaa1a1 
+}
+.form {
+    border: 1px solid #c29f9f;
+    background-color: rgb(179, 231, 246);
+    border-top-left-radius: 20px !important;
+    border-bottom-left-radius: 20px !important;
+    border-top-right-radius: 20px !important;
+    border-bottom-right-radius: 20px !important;
+    align-content: center;
+}
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: rgb(32, 25, 25);
+    color: white;
+    text-align: center;
+}

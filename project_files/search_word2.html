@@ -1,0 +1,55 @@
+<html>
+    <head>
+        <title>
+            Search-Here
+        </title>
+        <header class='header'>
+            Search... CEREBRO MACHINE
+        </header>
+        <link rel="stylesheet" type= "text/css" href= "{{ url_for('static',filename='word.css') }}">
+     </head>
+    <body>
+        <table>
+            <tr class='tr1'>
+                <font face='Arial' color='black' size='4'>
+                    EXAMPLE content of ALICE File : 
+                </font>
+            </tr>
+            <tr class='tr2'>
+                <p>
+                    <font color='grey'>
+                        Alice was beginning to get very tired of sitting by her sister on the
+                        bank, and of having nothing to do: once or twice she had peeped into the
+                        book her sister was reading, but it had no pictures or conversations in
+                        it, ‘and what is the use of a book,’ thought Alice ‘without pictures or
+                        conversations?’
+                    </font>
+                </p>
+            </tr>
+        </table>
+        <form action="http://localhost:4000/search" method="POST">
+            <font size='5' color='blue' face='cooper-black'>SEARCH AND PREDICT NEXT WORDs</font>
+            <div class="input-group-text">
+                <i class="fa fa-search"></i>
+                <input type = 'text' name='search' placeholder="Search...." required>
+            </div> 
+            <input type= 'submit' class='btn' value='predict'>
+        </form>  
+
+        <table>
+            <tr>
+                <font color='red' size='3'> pridicted: </font>
+            </tr>
+            <tr>
+                {%for i in svar:%}
+                <td>
+                    {{i}}
+                </td>
+                {%endfor%}
+            </tr>
+        </table>
+        <div class='footer'>
+            <p>Ks PVT.LTD</p>
+        </div>
+    </body>
+</html>
